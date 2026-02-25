@@ -7,15 +7,15 @@ on:
       - master
 
 env:
-  APP_NAME: easymytrip
+  APP_NAME: namu
   VERSION: 1.1.${{ github.run_number }}
   IMAGE_TAG: ${{ github.run_number }}
-  IMAGE_LOCAL: easymytrip:${{ github.run_number }}
-  IMAGE_LOCAL_LATEST: easymytrip:latest
-  IMAGE_DOCKERHUB: gopalsabale/easymytrip:${{ github.run_number }}
-  IMAGE_DOCKERHUB_LATEST: gopalsabale/easymytrip:latest
-  IMAGE_ECR: 315354952103.dkr.ecr.us-east-1.amazonaws.com/easymytrip:${{ github.run_number }}
-  IMAGE_ECR_LATEST: 315354952103.dkr.ecr.us-east-1.amazonaws.com/easymytrip:latest
+  IMAGE_LOCAL: namu:${{ github.run_number }}
+  IMAGE_LOCAL_LATEST: namu:latest
+  IMAGE_DOCKERHUB: pankaj2204/namu:${{ github.run_number }}
+  IMAGE_DOCKERHUB_LATEST: pankaj2204/namu:latest
+  IMAGE_ECR: 352731040067.dkr.ecr.ap-south-1.amazonaws.com/namu:${{ github.run_number }}
+  IMAGE_ECR_LATEST: 352731040067.dkr.ecr.ap-south-1.amazonaws.com/namu:latest
 jobs:
   build-test:
     name: Compile, Test & Package
