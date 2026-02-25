@@ -2,13 +2,13 @@
 FROM tomcat:9.0.82-jdk21-temurin
 
 # Set maintainer label (optional but good practice)
-LABEL maintainer="satyam.pandely@example.com"
+LABEL maintainer="pankajnalawade8"
 
 # Remove default ROOT app (optional, keeps container clean)
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 
 # Create a user for running the application
-RUN useradd -m bookmypan
+RUN useradd -m Namu
 
 # Copy your JAR file into the webapps directory
 COPY ./target/Namu.jar /usr/local/tomcat/webapps/
@@ -17,7 +17,7 @@ COPY ./target/Namu.jar /usr/local/tomcat/webapps/
 EXPOSE 8080
 
 # Set the user to 'mbooking-ms' for security
-USER bookmypan
+USER Namu
 
 # Default command to run Tomcat
 CMD ["catalina.sh", "run"]
