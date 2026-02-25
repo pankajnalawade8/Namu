@@ -11,7 +11,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN useradd -m Namu
 
 # Copy your JAR file into the webapps directory
-COPY ./target/Namu.jar /usr/local/tomcat/webapps/
+COPY target/*.jar app.jar
 
 # Expose the default Tomcat port
 EXPOSE 8080
