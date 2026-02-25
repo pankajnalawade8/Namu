@@ -122,7 +122,7 @@ jobs:
       - name: Login to Amazon ECR
         run: |
           aws ecr get-login-password --region ${{ secrets.AWS_REGION }} \
-          | docker login --username AWS --password-stdin 352731040067.dkr.ecr.us-east-1.amazonaws.com
+          | docker login --username AWS --password-stdin 352731040067.dkr.ecr.ap-south-1.amazonaws.com/
 
       - name: Push to Amazon ECR
         run: |
